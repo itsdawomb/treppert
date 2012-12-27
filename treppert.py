@@ -45,7 +45,7 @@ def no_dates():
                 for member in card.members:
                     print "-- ", member.username, member.fullname, member.url
 
-def no_cards():
+def dead_weight():
     """
     List all users with no cards assigned to them for the specified list.
     """
@@ -87,7 +87,7 @@ def main():
     dispatcher = {
             'lists':lists,
             'no_dates':no_dates,
-            'no_cards':no_cards
+            'dead_weight':dead_weight
     }
 
     parser = argparse.ArgumentParser(description="useful, simple, cmd-based \
